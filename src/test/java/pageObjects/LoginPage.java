@@ -7,8 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
-	
-WebDriver ldriver;
+
+	WebDriver ldriver;
 	
 	public LoginPage(WebDriver rdriver)
 	{
@@ -16,20 +16,20 @@ WebDriver ldriver;
 		PageFactory.initElements(rdriver, this);
 	}
 		
-	@FindBy(id="Email")
+	@FindBy(name="uid")
 	@CacheLookup
-	WebElement txtEmail;
+	WebElement txtUserName;
 	
 	@FindBy(name="password")
 	@CacheLookup
 	WebElement txtPassword;
 	
-	@FindBy(xpath="//button[@class='button-1 login-button']")
+	@FindBy(name="btnLogin")
 	@CacheLookup
 	WebElement btnLogin;
 	
 	
-	@FindBy(linkText="Logout")
+	@FindBy(xpath="/html/body/div[3]/div/ul/li[15]/a")
 	@CacheLookup
 	WebElement lnkLogout;
 	
@@ -37,13 +37,11 @@ WebDriver ldriver;
 	
 	public void setUserName(String uname)
 	{
-		txtEmail.clear();
-		txtEmail.sendKeys(uname);
+		txtUserName.sendKeys(uname);
 	}
 	
 	public void setPassword(String pwd)
 	{
-		txtEmail.clear();
 		txtPassword.sendKeys(pwd);
 	}
 	
@@ -58,5 +56,15 @@ WebDriver ldriver;
 		lnkLogout.click();
 	}
 	
-
+	
+	
 }
+
+
+
+
+
+
+
+
+
