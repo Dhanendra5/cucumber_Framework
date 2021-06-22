@@ -30,7 +30,7 @@ WaitHelper waithelper;
 	@CacheLookup
 	WebElement custidtxtbox;
 	
-	@FindBy(name="initdeposit")
+	@FindBy(name="inideposit")
 	@CacheLookup
 	WebElement deposit;
 	
@@ -63,6 +63,13 @@ WaitHelper waithelper;
 	      Select drop = new Select(Accounttype);
 	      drop.selectByIndex(index);  
 	}
+	
+	public void entercustid(String custidnum)
+	{
+		custidtxtbox.sendKeys(custidnum);
+	}
+	
+	
 	
 		
 

@@ -54,26 +54,12 @@ formatter.step({
   "name": "Enter new customer details",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 12,
-  "name": "click on submit",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 13,
-  "name": "user should view confirmation message",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 14,
-  "name": "close the browser",
-  "keyword": "And "
-});
 formatter.match({
   "location": "stepdef.user_launch_chromebrowser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4844679279,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -85,7 +71,8 @@ formatter.match({
   "location": "stepdef.user_opens_url(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 3968220764,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -97,7 +84,8 @@ formatter.match({
   "location": "stepdef.user_enter_email_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 446591163,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -109,52 +97,39 @@ formatter.match({
   "location": "stepdef.user_enter_passsword_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 105397596,
+  "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_on_login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1348818486,
+  "status": "passed"
 });
 formatter.match({
   "location": "stepdef.verify_title_page_after_login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 18317609,
+  "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_on_new_customer()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 794553561,
+  "status": "passed"
 });
 formatter.match({
   "location": "stepdef.enter_new_customer_details()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "stepdef.click_on_submit()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "stepdef.user_should_view_confirmation_message()"
-});
-formatter.result({
-  "status": "skipped"
-});
-formatter.match({
-  "location": "stepdef.close_the_browser()"
-});
-formatter.result({
-  "status": "skipped"
+  "duration": 7732452221,
+  "status": "passed"
 });
 formatter.scenario({
-  "line": 16,
+  "line": 15,
   "name": "Add new account with generated new customer",
   "description": "",
   "id": "customers;add-new-account-with-generated-new-customer",
@@ -162,55 +137,51 @@ formatter.scenario({
   "keyword": "Scenario"
 });
 formatter.step({
-  "line": 17,
+  "line": 16,
   "name": "user launch chromebrowser",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 18,
+  "line": 17,
   "name": "user opens url \"http://demo.guru99.com/V4/\"",
   "keyword": "When "
 });
 formatter.step({
-  "line": 19,
+  "line": 18,
   "name": "user enter email as \"mngr334130\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 20,
+  "line": 19,
   "name": "user enter passsword as \"umypasa\"",
   "keyword": "And "
 });
 formatter.step({
-  "line": 21,
+  "line": 20,
   "name": "click on login",
   "keyword": "And "
 });
 formatter.step({
-  "line": 22,
+  "line": 21,
   "name": "user should click on new Account",
   "keyword": "And "
 });
 formatter.step({
-  "line": 23,
+  "line": 22,
   "name": "user should add the account",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 24,
+  "line": 23,
   "name": "user should validate whether account got created successfully",
-  "keyword": "And "
-});
-formatter.step({
-  "line": 25,
-  "name": "close the browser",
   "keyword": "And "
 });
 formatter.match({
   "location": "stepdef.user_launch_chromebrowser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 2304995777,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -222,7 +193,8 @@ formatter.match({
   "location": "stepdef.user_opens_url(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 10561882144,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -234,7 +206,8 @@ formatter.match({
   "location": "stepdef.user_enter_email_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 142353306,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -246,28 +219,33 @@ formatter.match({
   "location": "stepdef.user_enter_passsword_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 100683090,
+  "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_on_login()"
 });
 formatter.result({
-  "status": "skipped"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
-});
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+  "duration": 1741605011,
+  "status": "passed"
 });
 formatter.match({
-  "location": "stepdef.close_the_browser()"
+  "location": "stepdef.user_should_click_on_new_Account()"
+});
+formatter.result({
+  "duration": 808186501,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepdef.user_should_add_the_account()"
+});
+formatter.result({
+  "duration": 33641073,
+  "error_message": "java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence\r\n\tat org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:97)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)\r\n\tat com.sun.proxy.$Proxy16.sendKeys(Unknown Source)\r\n\tat pageObjects.NewAccount.entercustid(NewAccount.java:69)\r\n\tat stepDefinitions.stepdef.user_should_add_the_account(stepdef.java:131)\r\n\tat ✽.Then user should add the account(./Features/customers.feature:22)\r\n",
+  "status": "failed"
+});
+formatter.match({
+  "location": "stepdef.user_should_validate_whether_account_got_created_successfully()"
 });
 formatter.result({
   "status": "skipped"

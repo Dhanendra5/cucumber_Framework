@@ -9,9 +9,8 @@ Scenario: Add a new customer
 			  And verify title page after login "
 			  When Click on new customer
 			  Then Enter new customer details 
-			  And click on submit
-			  Then user should view confirmation message 
-			  And close the browser
+
+			
 			  
 Scenario: Add new account with generated new customer
 	      Given user launch chromebrowser
@@ -22,7 +21,7 @@ Scenario: Add new account with generated new customer
 			  And user should click on new Account
 			  Then user should add the account
 			  And user should validate whether account got created successfully
-			  And close the browser
+			
 					
 			  
 			  

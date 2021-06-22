@@ -3,6 +3,7 @@ package stepDefinitions;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -94,7 +95,7 @@ public class stepdef extends BaseClass {
 		
 	
 	
-		addcust.custName("Dhani");
+		addcust.custName("Dhanendra");
 		addcust.custgender("male");
 		addcust.custdob("10","15","1985");
 		Thread.sleep(5000);
@@ -108,45 +109,18 @@ public class stepdef extends BaseClass {
 		addcust.custpassword("abcdef");
 		addcust.custsubmit();
 		
+		
+		String customerid = driver.findElement(By.xpath("(//tr//td)[6]")).getText();
+		System.out.println("customer id is " + customerid);
 
-		
-		boolean res=driver.getPageSource().contains("Customer Registered Successfully!!!");
-		
-		if(res==true)
-		{
-			Assert.assertTrue(true);
-		}
-		else
-		{
-			Assert.assertTrue(false);
-		}
 		
 	}
 
-	@Then("^click on submit$")
-	public void click_on_submit() {
-	  
-	
-	}
-
-	@Then("^user should view confirmation message$")
-	public void user_should_view_confirmation_message() {
-	  
-	
-	}
-
-	@Then("^close the browser$")
-	public void close_the_browser() {
-	  
-	
-	
-	}
-	
 	//steps for adding a new account for generated customer
 	@When("^user should click on new Account$")
 	public void user_should_click_on_new_Account()  {
 	   
-		NewAccount newaccount = new NewAccount(driver);
+		newaccount = new NewAccount(driver);
 		newaccount.ClickNewAccount();
 	   
 	}
@@ -154,11 +128,21 @@ public class stepdef extends BaseClass {
 	@Then("^user should add the account$")
 	public void user_should_add_the_account()  {
 	   
+		newaccount.entercustid(customerid);
+		newaccount.accountdropdown(1);
+		newaccount.initialDeposit("700");
+		newaccount.submitnewaccount();
+		
+		
+		
+		
 	   
 	}
 
 	@Then("^user should validate whether account got created successfully$")
 	public void user_should_validate_whether_account_got_created_successfully()  {
+		
+		
 	   
 	}
 
