@@ -3,20 +3,18 @@ package stepDefinitions;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.Assert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
 
-public class stepdef {
+
+public class stepdef extends BaseClass {
 	
-	public WebDriver driver;
-	public LoginPage lp;
 	
 	@Given("^user launch chromebrowser$")
 	public void user_launch_chromebrowser()  {
@@ -30,6 +28,7 @@ public class stepdef {
 	@When("^user opens url \"([^\"]*)\"$")
 	public void user_opens_url(String url)  {
 	  
+		driver.manage().window().maximize();
 		driver.get(url);
 	    
 	}
@@ -77,6 +76,55 @@ public class stepdef {
 	  
 	    driver.close();
 	    
+	}
+	
+	//customers features step definitions
+	
+	@When("^Click on new customer$")
+	public void click_on_new_customer() {
+	  
+	addcust = new AddCustomerPage(driver);
+	addcust.clickAddNewCustomer();
+		
+	}
+
+	@Then("^Enter new customer details$")
+	public void enter_new_customer_details() throws InterruptedException {
+		
+	
+	
+		addcust.custName("Pavan");
+		addcust.custgender("male");
+		addcust.custdob("10","15","1985");
+		Thread.sleep(5000);
+		addcust.custaddress("INDIA");
+		addcust.custcity("HYD");
+		addcust.custstate("AP");
+		addcust.custpinno("5000074");
+		addcust.custtelephoneno("987890091");
+		//String email=randomestring()+"@gmail.com";
+		//addcust.custemailid(email);
+		addcust.custpassword("abcdef");
+		addcust.custsubmit();
+		
+	}
+
+	@Then("^click on submit$")
+	public void click_on_submit() {
+	  
+	
+	}
+
+	@Then("^user should view confirmation message$")
+	public void user_should_view_confirmation_message() {
+	  
+	
+	}
+
+	@Then("^close the browser$")
+	public void close_the_browser() {
+	  
+	
 	}
 
 }
