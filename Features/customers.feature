@@ -13,4 +13,16 @@ Scenario: Add a new customer
 			  Then user should view confirmation message 
 			  And close the browser
 			  
+Scenario: Add new account with generated new customer
+	      Given user launch chromebrowser
+			  When user opens url "http://demo.guru99.com/V4/"
+			  And user enter email as "mngr334130" 
+			  And user enter passsword as "umypasa"
+			  And click on login
+			  And user should click on new Account
+			  Then user should add the account
+			  And user should validate whether account got created successfully
+			  And close the browser
+					
+			  
 			  

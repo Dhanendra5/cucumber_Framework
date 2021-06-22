@@ -93,7 +93,7 @@ public class stepdef extends BaseClass {
 		
 	
 	
-		addcust.custName("Pavan");
+		addcust.custName("Dhani");
 		addcust.custgender("male");
 		addcust.custdob("10","15","1985");
 		Thread.sleep(5000);
@@ -106,6 +106,19 @@ public class stepdef extends BaseClass {
 		addcust.custemailid(email);
 		addcust.custpassword("abcdef");
 		addcust.custsubmit();
+		
+
+		
+		boolean res=driver.getPageSource().contains("Customer Registered Successfully!!!");
+		
+		if(res==true)
+		{
+			Assert.assertTrue(true);
+		}
+		else
+		{
+			Assert.assertTrue(false);
+		}
 		
 	}
 
@@ -125,6 +138,25 @@ public class stepdef extends BaseClass {
 	public void close_the_browser() {
 	  
 	
+	
+	}
+	
+	//steps for adding a new account for generated customer
+	@When("^user should click on new Account$")
+	public void user_should_click_on_new_Account()  {
+	   
+	   
+	}
+
+	@Then("^user should add the account$")
+	public void user_should_add_the_account()  {
+	   
+	   
+	}
+
+	@Then("^user should validate whether account got created successfully$")
+	public void user_should_validate_whether_account_got_created_successfully()  {
+	   
 	}
 
 }
