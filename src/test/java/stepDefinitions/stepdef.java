@@ -102,8 +102,8 @@ public class stepdef extends BaseClass {
 		addcust.custstate("AP");
 		addcust.custpinno("5000074");
 		addcust.custtelephoneno("987890091");
-		//String email=randomestring()+"@gmail.com";
-		//addcust.custemailid(email);
+		String email=randomstring()+"@gmail.com";
+		addcust.custemailid(email);
 		addcust.custpassword("abcdef");
 		addcust.custsubmit();
 		

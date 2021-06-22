@@ -73,7 +73,8 @@ formatter.match({
   "location": "stepdef.user_launch_chromebrowser()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4262597477,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -85,7 +86,8 @@ formatter.match({
   "location": "stepdef.user_opens_url(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 4332564826,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -97,7 +99,8 @@ formatter.match({
   "location": "stepdef.user_enter_email_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 341969293,
+  "status": "passed"
 });
 formatter.match({
   "arguments": [
@@ -109,38 +112,56 @@ formatter.match({
   "location": "stepdef.user_enter_passsword_as(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 138787953,
+  "status": "passed"
 });
 formatter.match({
   "location": "stepdef.click_on_login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 1485122867,
+  "status": "passed"
 });
 formatter.match({
   "location": "stepdef.verify_title_page_after_login()"
 });
 formatter.result({
-  "status": "skipped"
+  "duration": 18708841,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "stepdef.click_on_new_customer()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 686618015,
+  "status": "passed"
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "location": "stepdef.enter_new_customer_details()"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 8010920308,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "location": "stepdef.click_on_submit()"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 77477,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepdef.user_should_view_confirmation_message()"
+});
+formatter.result({
+  "duration": 59190,
+  "status": "passed"
+});
+formatter.match({
+  "location": "stepdef.close_the_browser()"
+});
+formatter.result({
+  "duration": 80364,
+  "status": "passed"
 });
 });
