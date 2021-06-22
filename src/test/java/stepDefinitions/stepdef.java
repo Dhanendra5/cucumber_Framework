@@ -11,6 +11,7 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import pageObjects.AddCustomerPage;
 import pageObjects.LoginPage;
+import pageObjects.NewAccount;
 
 
 public class stepdef extends BaseClass {
@@ -145,6 +146,8 @@ public class stepdef extends BaseClass {
 	@When("^user should click on new Account$")
 	public void user_should_click_on_new_Account()  {
 	   
+		NewAccount newaccount = new NewAccount(driver);
+		newaccount.ClickNewAccount();
 	   
 	}
 
